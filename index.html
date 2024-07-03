@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santosh Shrestha - Computer Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="loader" class="loader"></div>
+    <div id="content" class="content">
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <a href="index.html">Santosh</a>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero-content">
+                <div class="profile">
+                    <div class="splash">
+                        <img src="profile.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="profile-text">
+                        <div class="intro">Hello! I am</div>
+                        <h1>Santosh Shrestha</h1>
+                        <h2>Computer Engineer</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="about">
+                <h2>About</h2>
+                <p>Resourceful Asst. Project Manager and Operational Manager with a proven track record of successful project completion. Adept at analyzing requirements, developing plans, and leading teams. Great at teaching and IT enthusiast.</p>
+                <p>As a Computer Teacher, I developed and implemented a comprehensive curriculum that integrates theoretical concepts with hands-on projects, fostering a practical understanding of computer science principles. I utilized diverse teaching methodologies to accommodate different learning styles, emphasizing problem-solving skills and creative thinking.</p>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Organization</li>
+                    <li>Problem Solving</li>
+                    <li>Project Management</li>
+                    <li>IT Technician</li>
+                    <li>Teaching</li>
+                    <li>Creativity</li>
+                    <li>Quality Assurance</li>
+                    <li>Leadership</li>
+                    <li>MS-Office Suite</li>
+                </ul>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>Shree Agraha Agriculture and Cow Farm Pvt. Ltd. | Operational Manager</h3>
+                    <h4>October 2023 - April 2024</h4>
+                    <p>Overseeing operational processes, ensuring efficiency across various departments, streamlining workflows, and optimizing resource allocation.</p>
+                </div>
+                <div class="job">
+                    <h3>BurgeonTech Pvt. Ltd. | Asst. Project Manager</h3>
+                    <h4>April 2023 - October 2023</h4>
+                    <p>Developed project plans, identified resources, and tracked progress to ensure successful completion of projects on time and within budget.</p>
+                </div>
+                <div class="job">
+                    <h3>Mukundasen English Boarding School | Computer Teacher</h3>
+                    <h4>April 2016 - April 2018</h4>
+                    <p>Developed lesson plans for Class 8 & 9 students. Supported students' progress and growth by assessing their performance, providing constructive feedback, and offering individualized assistance.</p>
+                </div>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Kathmandu University, 2018-2023</h3>
+                    <p>Bachelor of Computer Engineering, CGPA-3.65</p>
+                </div>
+                <div class="education-item">
+                    <h3>Gaindakot Namuna College, 2016-2018</h3>
+                    <p>High School (+2 Science), GPA-3.28</p>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:shresthas033@gmail.com">shresthas033@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+977-9816492184">+977-9816492184</a></p>
+		<p><i class="fas fa-phone"></i> Phone: <a href="tel:+977-9748774761">+977-9748774761</a></p>
+            </section>
+        </main>
+        <footer>
+            &copy; 2024 Santosh Shrestha. All Rights Reserved.
+        </footer>
+    </div>
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector("#content").style.visibility = "hidden";
+                document.querySelector("#loader").style.visibility = "visible";
+            } else {
+                document.querySelector("#loader").style.display = "none";
+                document.querySelector("#content").style.visibility = "visible";
+            }
+        };
+    </script>
+</body>
+</html>

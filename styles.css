@@ -1,0 +1,221 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #343a40;
+    position: relative;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-y: scroll; /* Enable only vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent overlay */
+    z-index: -1;
+}
+
+.loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    animation: spin 1s linear infinite;
+    z-index: 1000;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #008080; /* Teal color */
+    text-align: center;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.nav-left a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #008080; /* Teal color */
+    text-decoration: none;
+}
+
+.nav-right ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right ul li {
+    display: inline;
+}
+
+.nav-right ul li a {
+    color: #008080; /* Teal color */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+header .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header .profile .splash {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Round shape */
+    background: white;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+header .profile .splash img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .profile-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+header .intro {
+    font-size: 2rem;
+    font-weight: 600;
+    color: gold; /* Gold color */
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #008080; /* Teal color */
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for popping effect */
+    backdrop-filter: blur(10px); /* Glass effect */
+}
+
+h2 {
+    color: #008080;
+    border-bottom: 2px solid #008080;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.job, .education-item {
+    margin-bottom: 1.5rem;
+}
+
+.job h3, .education-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.job h4, .education-item p {
+    margin: 0.5rem 0 0.5rem;
+    color: #6c757d;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.7);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #008080;
+    backdrop-filter: blur(10px);
+    border-top: 2px solid #008080;
+    z-index: 1;
+}
+
+#contact a {
+    color: #008080; /* Teal color */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact i {
+    margin-right: 0.5rem;
+}
