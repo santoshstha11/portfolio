@@ -6,15 +6,20 @@
     <title>Santosh Shrestha - Computer Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
     <div id="loader" class="loader"></div>
-    <div id="content" class="content">
+    <div id="content" class="content" style="visibility:hidden;">
         <header>
             <nav>
                 <div class="nav-left">
-                    <a href="index.html">Santosh</a>
+                    <div class="nav-toggle">
+                        <span>&#9776;</span>
+                    </div>
+                    <a href="index.html">
+                        <img src="logo.png" alt="Logo" class="logo">
+                    </a>
                 </div>
                 <div class="nav-right">
                     <ul class="nav-menu">
@@ -24,9 +29,6 @@
                         <li><a href="#education">Education</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <div class="nav-toggle">
-                        <i class="fas fa-bars"></i>
-                    </div>
                 </div>
             </nav>
             <div class="hero-content">
@@ -42,6 +44,19 @@
                 </div>
             </div>
         </header>
+        <aside class="sidebar">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+            <button class="sidebar-close-btn">✖</button>
+            <ul class="sidebar-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </aside>
         <main>
             <section id="about">
                 <h2>About</h2>
@@ -94,29 +109,15 @@
             </section>
             <section id="contact">
                 <h2>Contact</h2>
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:shresthas033@gmail.com">shresthas033@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+977-9816492184">+977-9816492184</a></p>
-		<p><i class="fas fa-phone"></i> Phone: <a href="tel:+977-9748774761">+977-9748774761</a></p>
+                <p><img src="email-icon.png" alt="Email Icon" class="icon"><a href="mailto:shresthas033@gmail.com">shresthas033@gmail.com</a></p>
+                <p><img src="phone-icon.png" alt="Phone Icon" class="icon"><a href="tel:+9779816492184">+977-9816492184</a></p>
+                <p><img src="phone-icon.png" alt="Phone Icon" class="icon"><a href="tel:+9779748774761">+977-9748774761</a></p>
             </section>
         </main>
         <footer>
             &copy; 2024 Santosh Shrestha. All Rights Reserved.
         </footer>
     </div>
-    <script>
-        document.onreadystatechange = function () {
-            if (document.readyState !== "complete") {
-                document.querySelector("#content").style.visibility = "hidden";
-                document.querySelector("#loader").style.visibility = "visible";
-            } else {
-                document.querySelector("#loader").style.display = "none";
-                document.querySelector("#content").style.visibility = "visible";
-            }
-        };
-
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
